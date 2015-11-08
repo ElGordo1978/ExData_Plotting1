@@ -1,0 +1,7 @@
+plot.ts(airquality$Sub_metering_1, xaxt = "n", ylab = "Energy sub metering")
+> lines(airquality$Sub_metering_2, col="Red")
+> lines(airquality$Sub_metering_3, col="Blue")
+> axis(side = 1, at = 0, labels = "Thurs")
+> axis(side = 1, at = 1250, labels = "Fri")
+> axis(side = 1, at = 2500, labels = "Sat")
+> legend("topright", lty = 1, col =c("Grey", "Red", "Blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.5)
